@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "53733a41-3af8-400b-adf5-3ab9e05be874",
+		"name": "ABC Lighting Chatbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36969415",
+		"_collection_link": "https://www.postman.com/flight-geoscientist-53146621/workspace/my-workspace/collection/36969415-53733a41-3af8-400b-adf5-3ab9e05be874?action=share&source=collection_link&creator=36969415"
+	},
+	"item": [
+		{
+			"name": "Welcome Message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reply\": \"Hello! I’m a support assistant from ABC Lighting Company. We sell solar-powered street lights, driveway lights, and wall lights. Is there anything else I can help you with?\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/welcome\n\n",
+					"protocol": "https",
+					"host": [
+						"3004fdd7-d699-4721-b69b-e997e1899800",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"welcome\n\n"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Welcome Message",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply\": \"Hello! I’m a support assistant from ABC Lighting Company. We sell solar-powered street lights, driveway lights, and wall lights. Is there anything else I can help you with?\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/welcome",
+							"protocol": "https",
+							"host": [
+								"3004fdd7-d699-4721-b69b-e997e1899800",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"welcome"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"reply\": \"Hello! I’m a support assistant from ABC Lighting Company. We sell solar-powered street lights, driveway lights, and wall lights. Is there anything else I can help you with?\"\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "Solar Street Light Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reply\": \"Our Solar Street Light is 10 feet tall, shines for 12 hours per night, and gives 3000 lumens of brightness. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.8ZM7bAbbwKJuFzGAIgCrpgHaHa&pid=Api&P=0&h=180\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/street-light\n",
+					"protocol": "https",
+					"host": [
+						"3004fdd7-d699-4721-b69b-e997e1899800",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"street-light\n"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Solar Street Light Reply",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply\": \"Our Solar Street Light is 10 feet tall, shines for 12 hours per night, and gives 3000 lumens of brightness. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.8ZM7bAbbwKJuFzGAIgCrpgHaHa&pid=Api&P=0&h=180\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/street-light",
+							"protocol": "https",
+							"host": [
+								"3004fdd7-d699-4721-b69b-e997e1899800",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"street-light"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"reply\": \"Our Solar Street Light is 10 feet tall, shines for 12 hours per night, and gives 3000 lumens of brightness. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.8ZM7bAbbwKJuFzGAIgCrpgHaHa&pid=Api&P=0&h=180\"\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "No - Ask for Contact Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reply\": \"Thanks for chatting! Can I get your name and contact info to help you further?\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/no",
+					"protocol": "https",
+					"host": [
+						"3004fdd7-d699-4721-b69b-e997e1899800",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"no"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "No - Ask for Contact reply",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply\": \"Thanks for chatting! Can I get your name and contact info to help you further?\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/no",
+							"protocol": "https",
+							"host": [
+								"3004fdd7-d699-4721-b69b-e997e1899800",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"no"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"reply\": \"Thanks for chatting! Can I get your name and contact info to help you further?\"\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "Driveway Light Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reply\": \"Our Solar Driveway Light is 1 foot tall and designed to be installed along pathways or driveways. It runs for 10 hours at night and produces 200 lumens of soft white light. Want to see what it looks like?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.MrGQqUzSYP8D785T-L3CmQHaHa&pid=Api&P=0&h=180\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/light1",
+					"protocol": "https",
+					"host": [
+						"3004fdd7-d699-4721-b69b-e997e1899800",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"light1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Driveway Light Reply",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply\": \"Our Solar Driveway Light is 1 foot tall and designed to be installed along pathways or driveways. It runs for 10 hours at night and produces 200 lumens of soft white light. Want to see what it looks like?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.MrGQqUzSYP8D785T-L3CmQHaHa&pid=Api&P=0&h=180\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/light1",
+							"protocol": "https",
+							"host": [
+								"3004fdd7-d699-4721-b69b-e997e1899800",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"light1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"reply\": \"Our Solar Driveway Light is 1 foot tall and designed to be installed along pathways or driveways. It runs for 10 hours at night and produces 200 lumens of soft white light. Want to see what it looks like?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.MrGQqUzSYP8D785T-L3CmQHaHa&pid=Api&P=0&h=180\"\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "Wall Light Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reply\": \"Our Solar Wall Light is waterproof, motion-sensing, and perfect for outdoor walls. It shines 800 lumens and runs up to 8–10 hours per night. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.0tvgFhPKgHAC9-5IqJD1awHaEK&pid=Api&P=0&h=180\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/light2",
+					"protocol": "https",
+					"host": [
+						"3004fdd7-d699-4721-b69b-e997e1899800",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"light2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Wall Light Reply",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reply\": \"Our Solar Wall Light is waterproof, motion-sensing, and perfect for outdoor walls. It shines 800 lumens and runs up to 8–10 hours per night. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.0tvgFhPKgHAC9-5IqJD1awHaEK&pid=Api&P=0&h=180\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3004fdd7-d699-4721-b69b-e997e1899800.mock.pstmn.io/light2",
+							"protocol": "https",
+							"host": [
+								"3004fdd7-d699-4721-b69b-e997e1899800",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"light2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"reply\": \"Our Solar Wall Light is waterproof, motion-sensing, and perfect for outdoor walls. It shines 800 lumens and runs up to 8–10 hours per night. Want to see a picture?\",\r\n  \"image_url\": \"https://tse1.mm.bing.net/th?id=OIP.0tvgFhPKgHAC9-5IqJD1awHaEK&pid=Api&P=0&h=180\"\r\n}\r\n"
+				}
+			]
+		}
+	]
+}
